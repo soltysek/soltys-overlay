@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repositories encoding="UTF-8" version="1.1">
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>ctf-tools</name>
+    <description>tools used commonly when playing ctf competitions</description>
+    <homepage> https://gitlab.com/soltysek/ctf-overlay</homepage>
+    <owner>
+      <email>soltys1@gmail.com</email>
+      <name>Krzysztof Koroscik</name>
+    </owner>
+    <source type="git">https://gitlab.com/soltysek/ctf-overlay.git</source>
+  </repo>
+</repositories>
