@@ -3,11 +3,11 @@
   <repo priority="50" quality="experimental" status="unofficial">
     <name>ctf-tools</name>
     <description>tools used commonly when playing ctf competitions</description>
-    <homepage> https://gitlab.com/soltysek/ctf-overlay</homepage>
+    <homepage> https://gitlab.com/soltysek/ctf-tools</homepage>
     <owner>
       <email>soltys1@gmail.com</email>
       <name>Krzysztof Koroscik</name>
     </owner>
-    <source type="git">https://gitlab.com/soltysek/ctf-overlay.git</source>
+    <source type="git">https://gitlab.com/soltysek/ctf-tools.git</source>
   </repo>
 </repositories>
