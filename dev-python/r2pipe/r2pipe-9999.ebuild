@@ -16,11 +16,11 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 "
 
 python_compile() {
-	cd "$WORKDIR"/python
+	cd "$WORKDIR/$P"/python
 	distutils-r1_python_compile
 }
 
 python_install() {
-	cd "$WORKDIR"/python
+	cd "$WORKDIR/$P"/python
 	distutils-r1_python_install
 }
