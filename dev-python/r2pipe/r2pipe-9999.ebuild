@@ -15,7 +15,12 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 "
 
+python_compile() {
+	cd "$WORKDIR"/python
+	distutils-r1_python_compile
+}
+
 python_install() {
-	cd python
-	distutils-r1_python_intall
+	cd "$WORKDIR"/python
+	distutils-r1_python_install
 }
