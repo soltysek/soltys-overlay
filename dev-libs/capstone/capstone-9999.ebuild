@@ -4,7 +4,7 @@
 EAPI=6
 
 PYTHON_COMPAT=( python{2_7,3_6} )
-inherit multilib toolchain-funcs git-r3 distutils-r1
+inherit git-r3 python-r1
 
 DESCRIPTION="disassembly/disassembler framework + bindings"
 HOMEPAGE="http://www.capstone-engine.org/"
@@ -18,27 +18,9 @@ IUSE="python"
 RDEPEND=""
 DEPEND="${RDEPEND}"
 
-src_configure() {
-	{
-		cat <<-EOF
-		# Gentoo overrides:
-		#   verbose build
-		V = 1
-		#   toolchain
-		AR = $(tc-getAR)
-		CC = $(tc-getCC)
-		RANLIB = $(tc-getRANLIB)
-		#  toolchain flags
-		CFLAGS = ${CFLAGS}
-		LDFLAGS = ${LDFLAGS}
-		#  libs
-		LIBDIRARCH = $(get_libdir)
-		EOF
-	} >> config.mk || die
-
-}
 
 src_install() {
+	emake DESTDIR="${D}" PREFIX="/usr" LIBDIR="$(get_libdir)" install
 	if use python; then
 		cd "${WORKDIR}/${P}"/bindings
 		if use python_targets_python2_7; then
