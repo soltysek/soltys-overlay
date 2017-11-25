@@ -3,9 +3,9 @@
 
 EAPI=6
 
+PYTHON_COMPAT=( python{2_7,3_6} )
 inherit multilib toolchain-funcs git-r3 distutils-r1
 
-PYTHON_COMPAT=( python{2_7,3_6} )
 DESCRIPTION="disassembly/disassembler framework + bindings"
 HOMEPAGE="http://www.capstone-engine.org/"
 EGIT_REPO_URI="https://github.com/aquynh/capstone.git"
