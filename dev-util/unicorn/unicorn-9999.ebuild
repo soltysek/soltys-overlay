@@ -42,6 +42,9 @@ src_configure(){
 
 src_compile() {
 	UNICORN_ARCHS="${unicorn_targets}" UNICORN_STATIC="no" ./make.sh
+	if use python; then
+		emake -C bindings
+	fi
 }
 
 src_install() {
