@@ -8,7 +8,7 @@ inherit multilib toolchain-funcs git-r3
 PYTHON_COMPAT=( python{2_7,3_6} )
 DESCRIPTION="disassembly/disassembler framework + bindings"
 HOMEPAGE="http://www.capstone-engine.org/"
-GIT_REPO_URI="https://github.com/aquynh/capstone.git"
+EGIT_REPO_URI="https://github.com/aquynh/capstone.git"
 
 LICENSE="BSD"
 SLOT="0/3" # libcapstone.so.3
