@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python2_7 )
 
 inherit distutils-r1 git-r3
 
-DESCRIPTION="Pwntools is a CTF framework and exploit development library. Written in Python, it is designed for rapid prototyping and development, and intended to make exploit writing as simple as possible."
+DESCRIPTION="Pwntools is a CTF framework and exploit development library."
 HOMEPAGE="https://github.com/Gallopsled/pwntools#readme"
 EGIT_REPO_URI="https://github.com/Gallopsled/pwntools.git"
 

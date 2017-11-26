@@ -18,4 +18,3 @@ IUSE=""
 
 DEPEND="dev-libs/capstone[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}"
-

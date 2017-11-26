@@ -18,7 +18,6 @@ IUSE="python"
 RDEPEND=""
 DEPEND="${RDEPEND}"
 
-
 src_install() {
 	emake DESTDIR="${D}" PREFIX="/usr" LIBDIR="$(get_libdir)" install
 	if use python; then
@@ -30,4 +29,4 @@ src_install() {
 			emake -C python DESTDIR="${D}" install3
 		fi
 	fi
-} 
+}

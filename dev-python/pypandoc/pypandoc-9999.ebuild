@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python2_7 )
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Pypandoc provides a thin wrapper for pandoc, a universal document converter."
-HOMEPAGE="http://pypi.python.org/pypi/pypandoc/"
+HOMEPAGE="https://pypi.python.org/pypi/pypandoc/"
 EGIT_REPO_URI="https://github.com/bebraw/pypandoc.git"
 
 LICENSE="MIT"

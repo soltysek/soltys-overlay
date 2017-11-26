@@ -20,9 +20,8 @@ use_unicorn_targets=$(printf ' unicorn_targets_%s' ${IUSE_UNICORN_TARGETS})
 IUSE+=" ${use_unicorn_targets}"
 
 DEPEND="dev-libs/glib:2
+	virtual/pkgconfig
 	${PYTHON_DEPS}"
-RDEPEND="${DEPEND}
-	virtual/pkgconfig"
 
 REQUIRED_USE="|| ( ${use_unicorn_targets} )"
 
@@ -49,13 +48,13 @@ src_compile() {
 
 src_install() {
 	emake DESTDIR="${D}" LIBDIR="/usr/$(get_libdir)" UNICORN_STATIC="no" install
-    if use python; then
+	if use python; then
 		cd "${WORKDIR}/unicorn-${PV}"/bindings
 		if use python_targets_python2_7; then
 			emake -C python DESTDIR="${D}" install
 		fi
 		if use python_targets_python3_6; then
 			emake -C python DESTDIR="${D}" install3
-        fi
+		fi
 	fi
 }
