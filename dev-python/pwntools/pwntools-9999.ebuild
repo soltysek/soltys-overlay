@@ -32,4 +32,5 @@ DEPEND="dev-lang/python:2.7
 		dev-python/packaging
 		>=dev-python/psutil-3.3.0
 		dev-python/intervaltree
-		dev-util/unicorn[python]"
+		dev-util/unicorn[python]
+		dev-python/sortedcontainers"
