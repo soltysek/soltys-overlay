@@ -14,6 +14,7 @@ EGIT_REPO_URI="https://github.com/radare/radare2-r2pipe.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 "
+DEPEND="=dev-util/radare2-9999"
 
 python_compile() {
 	cd "$WORKDIR/$P"/python
