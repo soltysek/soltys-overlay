@@ -14,6 +14,7 @@ EGIT_REPO_URI="https://github.com/bebraw/pypandoc.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 "
+IUSE="pandoc"
 
-DEPEND="app-text/pandoc
-		dev-haskell/pandoc-citeproc"
+DEPEND="pandoc? ( app-text/pandoc
+	dev-haskell/pandoc-citeproc )"
