@@ -14,4 +14,5 @@ EGIT_REPO_URI="https://github.com/flashcode/msgcheck.git"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 "
-DEPEND="sys-devel/gettext"
+DEPEND="sys-devel/gettext
+        dev-python/pyenchant"
