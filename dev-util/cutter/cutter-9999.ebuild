@@ -10,6 +10,8 @@ DESCRIPTION="A Qt and C++ GUI for radare2 reverse engineering framework"
 HOMEPAGE="http://www.radare.org"
 EGIT_REPO_URI="https://github.com/radareorg/cutter.git"
 
+EGIT_SUBMODULES=( -radare2 )
+
 LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
