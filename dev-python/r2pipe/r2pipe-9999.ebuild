@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -13,7 +13,6 @@ EGIT_REPO_URI="https://github.com/radare/radare2-r2pipe.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 "
 DEPEND="=dev-util/radare2-9999"
 
 python_compile() {
