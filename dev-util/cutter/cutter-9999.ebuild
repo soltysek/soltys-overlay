@@ -21,6 +21,7 @@ DEPEND="
 	>=dev-qt/qtgui-5.9.1:5
 	>=dev-qt/qtsvg-5.9.1:5
 	>=dev-qt/qtwidgets-5.9.1:5
+	>=dev-qt/qtwebengine-5.9.1:5
 	=dev-util/radare2-9999
 	>=dev-lang/python-3.6
 	dev-python/notebook
@@ -30,7 +31,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 src_configure() {
-    python_setup
+	python_setup
 	eqmake5 PREFIX="/usr" src
 }
 
