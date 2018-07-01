@@ -30,6 +30,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 src_configure() {
+    python_setup
 	eqmake5 PREFIX="/usr" src
 }
 
