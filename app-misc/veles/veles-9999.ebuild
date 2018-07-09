@@ -28,4 +28,5 @@ DEPEND="sys-libs/zlib
 
 src_configure() {
 	python_setup
+	cmake-utils_src_configure
 }
