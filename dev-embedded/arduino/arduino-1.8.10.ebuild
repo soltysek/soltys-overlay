@@ -19,7 +19,7 @@ for docname in "${ARDUINO_DOCS[@]}"; do
 done
 
 SRC_URI="https://github.com/arduino/Arduino/archive/${PV}.tar.gz -> ${P}.tar.gz
-	https://downloads.arduino.cc/cores/avr-1.6.23.tar.bz2 -> ${PN}-avr-1.6.23.tar.bz2
+	https://downloads.arduino.cc/cores/avr-1.8.1.tar.bz2 -> ${PN}-avr-1.8.1.tar.bz2
 	https://github.com/arduino-libraries/WiFi101-FirmwareUpdater-Plugin/releases/download/v0.9.2/WiFi101-Updater-ArduinoIDE-Plugin-0.9.2.zip -> ${PN}-WiFi101-Updater-ArduinoIDE-Plugin-0.9.2.zip
 	doc? (
 		${ARDUINO_DOCS_URI}
