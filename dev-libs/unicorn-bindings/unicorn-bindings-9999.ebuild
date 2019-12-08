@@ -26,7 +26,7 @@ DEPEND="${RDEPEND}
 #	go? ( dev-lang/go )
 #	ruby? ( dev-lang/ruby:* )
 
-S="${WORKDIR}/unicorn-${MY_PV}"/bindings
+S="${WORKDIR}/unicorn-bindings-${MY_PV}"/bindings
 
 pkg_setup() {
 	python_setup
