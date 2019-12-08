@@ -13,7 +13,7 @@ EGIT_REPO_URI="https://github.com/JonathanSalwan/ROPgadget.git"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="dev-libs/capstone[${PYTHON_USEDEP}]"
