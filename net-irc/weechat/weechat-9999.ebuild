@@ -88,7 +88,7 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-3.3-cmake_lua_version.patch
 )
 
-DOCS="AUTHORS.adoc ChangeLog.adoc Contributing.adoc ReleaseNotes.adoc README.adoc"
+DOCS="AUTHORS.md ChangeLog.md Contributing.md ReleaseNotes.md README.md"
 
 RESTRICT="!test? ( test )"
 
