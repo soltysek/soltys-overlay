@@ -3,8 +3,8 @@
 
 EAPI=8
 
-DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{12,13,14,15} )
+DISTUTILS_USE_PEP517=uv-build
+PYTHON_COMPAT=( python3_{12..15} )
 
 inherit distutils-r1 git-r3
 
@@ -14,5 +14,5 @@ EGIT_REPO_URI="https://github.com/flashcode/msgcheck.git"
 
 LICENSE="GPL-3"
 SLOT="0"
-DEPEND="sys-devel/gettext
-dev-python/pyenchant"
+RDEPEND="sys-devel/gettext
+>=dev-python/pyenchant-3.3.0"
